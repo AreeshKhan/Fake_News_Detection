@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple HTML Page</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+	<div class="home-page">
+		<h1>Lets Check the Newz Authenticity</h1>
+		<a href="{{ url_for('predict_datapoint') }}" class="btn">Go to Prediction Page</a>
+	</div>
+</body>
+</html>
+
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title>Simple HTML Page</title>
+</head>
+<body>
+	<h1>Lets Check the Newz Authenticity</h1>
+		
+	<a href="{{ url_for('predict_datapoint') }}" class="btn">Go to Prediction Page</a>
+</body>
+</html> -->

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>News Predictor</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+	<div class="container">
+		<form action="{{ url_for('predict_datapoint')}}" method="post">
+			<div class="form-group">
+				<label for="input_field">Enter News Here:</label>
+				<input type="text" id="text" name="text" placeholder="news here" required="required">
+			</div>
+			<button type="submit" class="btn">Predict</button>
+		</form>
+		<div class="result">
+			<h2>THE News is {{result}}</h2>
+		</div>
+	</div>
+</body>
+</html>

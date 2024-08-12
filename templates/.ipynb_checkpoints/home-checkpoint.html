@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simple HTML Page</title>
+</head>
+<body>
+	
+	<form action="{{ url_for('predict_datapoint')}}" method="post">
+        <label for="input_field">Enter Newz Here:</label>
+		<input type="text" id="text" name="text" placeholder="newz here" required="required"><br><br>
+		<button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+
+	</form>
+    <h2>THE News is {{result}}</h2>
+</body>
+</html>
+
